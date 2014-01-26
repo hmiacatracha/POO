@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You may freely edit this file. See commented blocks below for -->
+<!-- some examples of how to customize the build. -->
+<!-- (If you delete it and reopen the project it will be recreated.) -->
+<!-- By default, only the Clean and Build commands use this build script. -->
+<!-- Commands such as Run, Debug, and Test only use this build script if -->
+<!-- the Compile on Save feature is turned off for the project. -->
+<!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
+<!-- in the project's Project Properties dialog box.-->
+<project name="ArmenterosF-IzaguirreH-b2" default="default" basedir=".">
+    <description>Builds, tests, and runs the project ArmenterosF-IzaguirreH-b2.</description>
+    <import file="nbproject/build-impl.xml"/>
+    <!-- líneas añadidas para ejecutar cobertura -->
+    <path id="cobertura.classpath">
+        <fileset dir="${basedir}">
+            <include name="lib/cobertura-1.9.4.1/cobertura.jar" />
+            <include name="lib/cobertura-1.9.4.1/lib/**/*.jar" />
+        </fileset>
+    </path>
+    <taskdef classpathref="cobertura.classpath" resource="tasks.properties"/>
+    <target name="cobertura-instrument" depends="init,compile-test,-pre-test-run">
+        <cobertura-instrument todir="${build.test.cobertura.classes.dir}">
+            <fileset dir="${build.classes.dir}">
+                <include name="**/*.class"/>
+            </fileset>
+        </cobertura-instrument>
+    </target>
+    <target name="test-coverage" depends="init,compile-test,-pre-test-run,cobertura-instrument,
+-do-test-run,test-report,-post-test-run,-test-browse"/>
+    <target name="cobertura-coverage-report" depends="init, test-coverage">
+        <cobertura-report srcdir="${src.dir}" destdir="${cobertura.report.dir}"/>
+        <delete file="Serialized" failonerror="false"/>
+        <delete file="cobertura.ser" failonerror="false"/>
+    </target>
+
+</project>
+

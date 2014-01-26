@@ -1,0 +1,52 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ejercicio5;
+
+import java.util.*;
+
+/**
+ *
+
+ */
+public class Mazo {
+
+    private List<Carta> mazo;
+
+    public Mazo(List<Carta> lista) {
+        this.mazo = new ArrayList<Carta>(lista);
+    }
+
+    public void mostrarMazo() {
+        for (int i = 0; i < 40; i++) {
+            System.out.println(this.mazo.get(i).getNumero() + " " + this.mazo.get(i).getPalo() + " " + i);
+        }
+
+    }
+
+    public void quitarCartas(Carta carta) {
+        this.mazo.remove(carta);
+
+    }
+
+    public Carta getCarta() {
+        Carta carta = this.mazo.get(0);
+        this.mazo.remove(0);
+        return carta;
+    }
+
+    public void anadirCartas(Carta carta) {
+        if (!this.mazo.contains(carta)) {
+            this.mazo.add(carta);
+        }
+    }
+
+    public void barajar() {
+        Collections.shuffle(this.mazo);
+    }
+    
+        public int tamanoMazo(){
+        return this.mazo.size();
+    }
+}

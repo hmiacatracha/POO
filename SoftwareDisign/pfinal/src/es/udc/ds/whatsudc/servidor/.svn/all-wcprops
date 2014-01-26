@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/grao2/ds/12-13/DS-21-09/!svn/ver/68/pfinal/src/es/udc/ds/whatsudc/servidor
+END
+EstadoMantenimiento.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/grao2/ds/12-13/DS-21-09/!svn/ver/68/pfinal/src/es/udc/ds/whatsudc/servidor/EstadoMantenimiento.java
+END
+Mantenimiento.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/grao2/ds/12-13/DS-21-09/!svn/ver/68/pfinal/src/es/udc/ds/whatsudc/servidor/Mantenimiento.java
+END
+ServidorSimple.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/grao2/ds/12-13/DS-21-09/!svn/ver/68/pfinal/src/es/udc/ds/whatsudc/servidor/ServidorSimple.java
+END
+EstadoNormal.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/grao2/ds/12-13/DS-21-09/!svn/ver/68/pfinal/src/es/udc/ds/whatsudc/servidor/EstadoNormal.java
+END
+Normal.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grao2/ds/12-13/DS-21-09/!svn/ver/68/pfinal/src/es/udc/ds/whatsudc/servidor/Normal.java
+END
+Servidor.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/grao2/ds/12-13/DS-21-09/!svn/ver/68/pfinal/src/es/udc/ds/whatsudc/servidor/Servidor.java
+END
+Estado.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/grao2/ds/12-13/DS-21-09/!svn/ver/68/pfinal/src/es/udc/ds/whatsudc/servidor/Estado.java
+END
+ServidorDeRespaldo.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/grao2/ds/12-13/DS-21-09/!svn/ver/68/pfinal/src/es/udc/ds/whatsudc/servidor/ServidorDeRespaldo.java
+END
+Decorador.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/grao2/ds/12-13/DS-21-09/!svn/ver/68/pfinal/src/es/udc/ds/whatsudc/servidor/Decorador.java
+END
+EstadoSaturado.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/grao2/ds/12-13/DS-21-09/!svn/ver/68/pfinal/src/es/udc/ds/whatsudc/servidor/EstadoSaturado.java
+END
+Saturado.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/grao2/ds/12-13/DS-21-09/!svn/ver/68/pfinal/src/es/udc/ds/whatsudc/servidor/Saturado.java
+END
+ServidorIntervenido.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/grao2/ds/12-13/DS-21-09/!svn/ver/68/pfinal/src/es/udc/ds/whatsudc/servidor/ServidorIntervenido.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/grao2/ds/12-13/DS-21-09/!svn/ver/68/pfinal/src/es/udc/ds/whatsudc/servidor/package-info.java
+END

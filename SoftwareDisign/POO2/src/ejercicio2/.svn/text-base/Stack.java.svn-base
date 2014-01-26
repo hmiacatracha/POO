@@ -1,0 +1,71 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ejercicio2;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+
+/**
+ *
+ * @author Fati
+ */
+public class Stack<E> extends java.util.AbstractQueue<E> {
+
+    private LinkedList<E> lista;
+
+    public Stack() {
+        this.lista = new LinkedList<E>();
+    }
+
+    public boolean esVacia() {
+        return (this.lista.size() == 0);
+    }
+
+    @Override
+    public Iterator<E> iterator() {
+        Iterador iter = new Iterador(this.lista);
+        return iter;
+    }
+
+    @Override
+    public int size() {
+        return this.lista.size();
+    }
+
+    @Override
+    public boolean offer(E e) {
+        if (e == null) {
+            return false;
+        } else {
+            return this.lista.add(e);
+        }
+    }
+
+    @Override
+    public E poll() {
+        if (esVacia()) {
+            return null;
+        } else {
+            E ultimo = this.lista.getLast();
+            this.lista.remove(this.lista.size() - 1);
+            return ultimo;
+        }
+    }
+
+    @Override
+    public E peek() {
+        if (esVacia()) {
+            return null;
+        } else {
+            return this.lista.getLast();
+        }
+    }
+
+    public void mostrarPila() {
+        for (int i = this.lista.size() - 1; i >= 0; i--) {
+            System.out.println(this.lista.get(i));
+        }
+    }
+}
